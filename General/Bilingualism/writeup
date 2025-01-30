@@ -1,0 +1,9 @@
+1) The given file is a bilingual program written in both javascript and the esolang Whitespace.
+
+2) Doing appropriate fixes in the code you can interpret both the code results using their respective interpreters.
+
+3) From the whitespace code, you will recieve a kind of encoded flag, which you can decode using the output from the javascript code.
+
+4) The i,j,k represent space, tab and newline respectively.
+
+5) Flag: hacks{ijijkijkkji}
