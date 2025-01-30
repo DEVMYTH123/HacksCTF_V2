@@ -1,4 +1,4 @@
-We are given 20 lines of binary code. We have to do OR operation of each index of each string on every line. This will give the final flag in binary. We can then decode that. Here is the python script for the same
+We are given 20 lines of binary code. We have to do OR operation of each index of each string on every line. This will give the final flag in binary. We can then decode that. The python script for the same is shared.
 
 
 Flag: hacks{y0u_0n_4_str34k}
