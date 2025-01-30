@@ -1,0 +1,7 @@
+Digital Fortress
+Write up :-
+1) The key mentioned in the challenge riddle points to 3, and by applying Rail Fence decryption you can find the phrase.
+
+2) Adding appropriate spaces between the words you get another riddle which points to the country Peru.
+
+3) Flag: hacks{peru}
