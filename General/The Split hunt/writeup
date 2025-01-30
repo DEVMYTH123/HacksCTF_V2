@@ -1,0 +1,36 @@
+Steps to Solve:
+
+1. Extract the codes from hear_this, ohh_him_again, and random_guy using appropriate tools like steghide aur stegseek . Each of the file will give you a text file containing the part of the key. 
+
+
+2. Combine these codes to form the 16-character key with underscore as blanks. The order in which the text will be added is as p. 
+
+
+3. Decrypt the encrypted text in people_say_that_it_is_useless_text using AES in ECB mode with the UTF-8 key.
+
+
+4. Read the decrypted message to find the flag.
+You need to use a python script in order to find the correct value of the blanks. 
+
+Code that might help 
+
+from Crypto.Cipher import AES import binascii 
+chars = ['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'] 
+c = binascii.unhexlify(b'a5580f0489b7dc79c8121c34ad1b1605dfcc9cefed992a7a9b769e3d827b7db25e282bf64518ceac6602d61e6218d918a6c9936d7ec30adca6c5e3d864b1a013') 
+for i in chars: 
+for j in chars: 
+for k in chars: 
+key = 'F89'+i+'DCAE8'+j+'8F0'+k+'15' 
+key = key.encode() 
+try: 
+cipher = AES.new(key,AES.MODE_ECB) 
+print(cipher.decrypt(c)) 
+print(key) 
+except: 
+continue
+
+The correct values of blanks are 999 ;) 
+
+
+Flag: hacks{1V_H1dd3n}
+
